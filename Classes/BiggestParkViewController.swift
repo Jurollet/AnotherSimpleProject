@@ -62,7 +62,7 @@ class BiggestParkViewController: SharedViewController {
         postCodeLabel.topAnchor.constraint(equalTo: cityLabel.topAnchor, constant: 100).isActive = true
 
         let accessibilityLabel = UILabel()
-        accessibilityLabel.text = "Accessibility: \(park.accessibility)"
+        accessibilityLabel.text = "Accessibility: \(getAccessibility(from: park))"
         view.addSubview(accessibilityLabel)
         accessibilityLabel.translatesAutoresizingMaskIntoConstraints = false
         accessibilityLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 24).isActive = true
@@ -80,4 +80,18 @@ class BiggestParkViewController: SharedViewController {
         return parks.first { $0.name == parkName }!
     }
 
+    private func getAccessibility(from park: Park) -> String {
+        var accessibilityString = ""
+        for accessibility in park.accessibility {
+            let singleAccessibilityString: String
+            switch accessibility {
+            case .pedestrian:
+                singleAccessibilityString = "Pedestrian "
+            case .bike:
+                singleAccessibilityString = "Bike "
+            }
+            accessibilityString += singleAccessibilityString
+        }
+        return accessibilityString
+    }
 }
