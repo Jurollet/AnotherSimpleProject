@@ -7,14 +7,27 @@
 
 import Foundation
 
+protocol HomeViewControllerDelegate {
+    func homeViewControllerDidRequestToShowPark(withName name: String)
+}
+
 class HomeViewController: SharedViewController {
 
     private let getAllParksInteractor = GetAllParksInteractor()
+    private let delegate: HomeViewControllerDelegate
+
+    private var parks: [Park] = []
+
+    init(delegate: HomeViewControllerDelegate) {
+        self.delegate = delegate
+        super.init(nibName: nil, bundle: nil)
+    }
 
     override func viewDidLoad() {
         getAllParksInteractor.execute { [weak self] result in
             switch result {
             case .success(let parks):
+                self?.parks = parks
                 self?.configure(with: parks)
             case .failure:
                 // TODO Julien 25-02-2020 : Handle errors
@@ -56,6 +69,11 @@ class HomeViewController: SharedViewController {
         showBiggestParkButton.translatesAutoresizingMaskIntoConstraints = false
         showBiggestParkButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         showBiggestParkButton.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 100).isActive = true
+        showBiggestParkButton.addTarget(
+            self,
+            action: #selector(showBiggestPark),
+            for: .touchDown
+        )
     }
 
     private func getBiggestPark(from parks: [Park]) -> Park {
@@ -70,6 +88,6 @@ class HomeViewController: SharedViewController {
     }
 
     @objc private func showBiggestPark() {
-        // todo
+        delegate.homeViewControllerDidRequestToShowPark(withName: getBiggestPark(from: parks).name)
     }
 }
