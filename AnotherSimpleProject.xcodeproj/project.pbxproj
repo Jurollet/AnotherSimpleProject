@@ -50,6 +50,7 @@
 		EA382416240529AE00F85304 /* RestParks.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA382415240529AE00F85304 /* RestParks.swift */; };
 		EA382419240530D500F85304 /* RestParksMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA382418240530D500F85304 /* RestParksMapper.swift */; };
 		EA38241B240530EC00F85304 /* Park.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA38241A240530EC00F85304 /* Park.swift */; };
+		EA38241E2405517000F85304 /* GetAllParksInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA38241D2405517000F85304 /* GetAllParksInteractor.swift */; };
 		EC626C5C1F9A282A001C332C /* HelveticaNeue.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC626C5B1F9A282A001C332C /* HelveticaNeue.plist */; };
 /* End PBXBuildFile section */
 
@@ -119,6 +120,7 @@
 		EA382415240529AE00F85304 /* RestParks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestParks.swift; sourceTree = "<group>"; };
 		EA382418240530D500F85304 /* RestParksMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestParksMapper.swift; sourceTree = "<group>"; };
 		EA38241A240530EC00F85304 /* Park.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Park.swift; sourceTree = "<group>"; };
+		EA38241D2405517000F85304 /* GetAllParksInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllParksInteractor.swift; sourceTree = "<group>"; };
 		EC626C5B1F9A282A001C332C /* HelveticaNeue.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = HelveticaNeue.plist; sourceTree = "<group>"; };
 		F58BBA250BE675C419ED2946 /* Pods-AnotherSimpleProjectTests.preproduction.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnotherSimpleProjectTests.preproduction.xcconfig"; path = "Pods/Target Support Files/Pods-AnotherSimpleProjectTests/Pods-AnotherSimpleProjectTests.preproduction.xcconfig"; sourceTree = "<group>"; };
 		F83B92161A7A8CCF009E7ADF /* Defaults-Config_Defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Defaults-Config_Defaults.plist"; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 		496C4D211F67BC3A00729B15 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				EA38241C2405515700F85304 /* GetAllParks */,
 			);
 			name = Interactor;
 			sourceTree = "<group>";
@@ -417,6 +420,14 @@
 				EA382418240530D500F85304 /* RestParksMapper.swift */,
 			);
 			name = RestMappers;
+			sourceTree = "<group>";
+		};
+		EA38241C2405515700F85304 /* GetAllParks */ = {
+			isa = PBXGroup;
+			children = (
+				EA38241D2405517000F85304 /* GetAllParksInteractor.swift */,
+			);
+			name = GetAllParks;
 			sourceTree = "<group>";
 		};
 		F83B92141A7A8CCF009E7ADF /* Configuration */ = {
@@ -808,6 +819,7 @@
 				49ADDFB51F55B4DC0072B16C /* TargetSettingsDecoder.swift in Sources */,
 				E7CFD4B222F2F60B00C5B731 /* ModuleAssembly.swift in Sources */,
 				57E1CD4D1C8890CA00A7DFFB /* Fonts.swift in Sources */,
+				EA38241E2405517000F85304 /* GetAllParksInteractor.swift in Sources */,
 				E7B4FDD222FDBF3000B39055 /* ViewStyle+Initialization.swift in Sources */,
 				49F7C9F81D0EDE7100086054 /* ADFileLoggerFormatter.m in Sources */,
 				496E5C451DEEF9720050EFB6 /* InteractorAssembly.swift in Sources */,
