@@ -45,6 +45,14 @@
 		E7FC27C022F1DB0C00EED267 /* MainThreadMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FC27BD22F1DB0C00EED267 /* MainThreadMonitor.swift */; };
 		E7FC27C122F1DB0C00EED267 /* ModuleLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FC27BE22F1DB0C00EED267 /* ModuleLauncher.swift */; };
 		E7FC27C222F1DB0C00EED267 /* CrashReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FC27BF22F1DB0C00EED267 /* CrashReporter.swift */; };
+		EA3824112405229400F85304 /* ParksAndRecRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3824102405229400F85304 /* ParksAndRecRepository.swift */; };
+		EA3824142405284600F85304 /* RestPark.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3824132405284600F85304 /* RestPark.swift */; };
+		EA382416240529AE00F85304 /* RestParks.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA382415240529AE00F85304 /* RestParks.swift */; };
+		EA382419240530D500F85304 /* RestParksMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA382418240530D500F85304 /* RestParksMapper.swift */; };
+		EA38241B240530EC00F85304 /* Park.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA38241A240530EC00F85304 /* Park.swift */; };
+		EA38241E2405517000F85304 /* GetAllParksInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA38241D2405517000F85304 /* GetAllParksInteractor.swift */; };
+		EA5F48B824055A0F00412F6C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5F48B724055A0F00412F6C /* HomeViewController.swift */; };
+		EA5F48BB2405600F00412F6C /* BiggestParkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5F48BA2405600F00412F6C /* BiggestParkViewController.swift */; };
 		EC626C5C1F9A282A001C332C /* HelveticaNeue.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC626C5B1F9A282A001C332C /* HelveticaNeue.plist */; };
 /* End PBXBuildFile section */
 
@@ -109,6 +117,14 @@
 		E7FC27BD22F1DB0C00EED267 /* MainThreadMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainThreadMonitor.swift; sourceTree = "<group>"; };
 		E7FC27BE22F1DB0C00EED267 /* ModuleLauncher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleLauncher.swift; sourceTree = "<group>"; };
 		E7FC27BF22F1DB0C00EED267 /* CrashReporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrashReporter.swift; sourceTree = "<group>"; };
+		EA3824102405229400F85304 /* ParksAndRecRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksAndRecRepository.swift; sourceTree = "<group>"; };
+		EA3824132405284600F85304 /* RestPark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestPark.swift; sourceTree = "<group>"; };
+		EA382415240529AE00F85304 /* RestParks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestParks.swift; sourceTree = "<group>"; };
+		EA382418240530D500F85304 /* RestParksMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestParksMapper.swift; sourceTree = "<group>"; };
+		EA38241A240530EC00F85304 /* Park.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Park.swift; sourceTree = "<group>"; };
+		EA38241D2405517000F85304 /* GetAllParksInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllParksInteractor.swift; sourceTree = "<group>"; };
+		EA5F48B724055A0F00412F6C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EA5F48BA2405600F00412F6C /* BiggestParkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiggestParkViewController.swift; sourceTree = "<group>"; };
 		EC626C5B1F9A282A001C332C /* HelveticaNeue.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = HelveticaNeue.plist; sourceTree = "<group>"; };
 		F58BBA250BE675C419ED2946 /* Pods-AnotherSimpleProjectTests.preproduction.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnotherSimpleProjectTests.preproduction.xcconfig"; path = "Pods/Target Support Files/Pods-AnotherSimpleProjectTests/Pods-AnotherSimpleProjectTests.preproduction.xcconfig"; sourceTree = "<group>"; };
 		F83B92161A7A8CCF009E7ADF /* Defaults-Config_Defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Defaults-Config_Defaults.plist"; sourceTree = "<group>"; };
@@ -160,6 +176,8 @@
 		495911511D7D4EF60057C974 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				EA5F48B92405600000412F6C /* BiggestPark */,
+				EA5F48B624055A0400412F6C /* Home */,
 				495911551D7D4F150057C974 /* Shared */,
 			);
 			name = App;
@@ -178,6 +196,9 @@
 		495911531D7D4EFE0057C974 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				EA382417240530BD00F85304 /* RestMappers */,
+				EA3824122405236400F85304 /* RestModels */,
+				EA38240E2405222A00F85304 /* Repositories */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -217,6 +238,7 @@
 		495911571D7D4F3A0057C974 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				EA38241A240530EC00F85304 /* Park.swift */,
 			);
 			name = Entity;
 			sourceTree = "<group>";
@@ -231,6 +253,7 @@
 		496C4D211F67BC3A00729B15 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				EA38241C2405515700F85304 /* GetAllParks */,
 			);
 			name = Interactor;
 			sourceTree = "<group>";
@@ -370,6 +393,63 @@
 				E7B4FDD322FDC17F00B39055 /* ViewStyle+UIWindow.swift */,
 			);
 			name = Style;
+			sourceTree = "<group>";
+		};
+		EA38240E2405222A00F85304 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				EA38240F2405224200F85304 /* ParksAndRecRepository */,
+			);
+			name = Repositories;
+			sourceTree = "<group>";
+		};
+		EA38240F2405224200F85304 /* ParksAndRecRepository */ = {
+			isa = PBXGroup;
+			children = (
+				EA3824102405229400F85304 /* ParksAndRecRepository.swift */,
+			);
+			name = ParksAndRecRepository;
+			sourceTree = "<group>";
+		};
+		EA3824122405236400F85304 /* RestModels */ = {
+			isa = PBXGroup;
+			children = (
+				EA3824132405284600F85304 /* RestPark.swift */,
+				EA382415240529AE00F85304 /* RestParks.swift */,
+			);
+			name = RestModels;
+			sourceTree = "<group>";
+		};
+		EA382417240530BD00F85304 /* RestMappers */ = {
+			isa = PBXGroup;
+			children = (
+				EA382418240530D500F85304 /* RestParksMapper.swift */,
+			);
+			name = RestMappers;
+			sourceTree = "<group>";
+		};
+		EA38241C2405515700F85304 /* GetAllParks */ = {
+			isa = PBXGroup;
+			children = (
+				EA38241D2405517000F85304 /* GetAllParksInteractor.swift */,
+			);
+			name = GetAllParks;
+			sourceTree = "<group>";
+		};
+		EA5F48B624055A0400412F6C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EA5F48B724055A0F00412F6C /* HomeViewController.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		EA5F48B92405600000412F6C /* BiggestPark */ = {
+			isa = PBXGroup;
+			children = (
+				EA5F48BA2405600F00412F6C /* BiggestParkViewController.swift */,
+			);
+			name = BiggestPark;
 			sourceTree = "<group>";
 		};
 		F83B92141A7A8CCF009E7ADF /* Configuration */ = {
@@ -750,14 +830,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA5F48BB2405600F00412F6C /* BiggestParkViewController.swift in Sources */,
 				496E5C411DEEF9620050EFB6 /* DependencyProvider.swift in Sources */,
+				EA3824142405284600F85304 /* RestPark.swift in Sources */,
+				EA3824112405229400F85304 /* ParksAndRecRepository.swift in Sources */,
 				E7B4FDD422FDC17F00B39055 /* ViewStyle+UIWindow.swift in Sources */,
 				496E5C471DEEF97B0050EFB6 /* RepositoryAssembly.swift in Sources */,
+				EA382416240529AE00F85304 /* RestParks.swift in Sources */,
 				49B3B43921DF9EB800F70BCF /* DebugToolKit.swift in Sources */,
 				4959115A1D7D4FE70057C974 /* Coordinator.swift in Sources */,
 				49ADDFB51F55B4DC0072B16C /* TargetSettingsDecoder.swift in Sources */,
 				E7CFD4B222F2F60B00C5B731 /* ModuleAssembly.swift in Sources */,
 				57E1CD4D1C8890CA00A7DFFB /* Fonts.swift in Sources */,
+				EA38241E2405517000F85304 /* GetAllParksInteractor.swift in Sources */,
 				E7B4FDD222FDBF3000B39055 /* ViewStyle+Initialization.swift in Sources */,
 				49F7C9F81D0EDE7100086054 /* ADFileLoggerFormatter.m in Sources */,
 				496E5C451DEEF9720050EFB6 /* InteractorAssembly.swift in Sources */,
@@ -771,8 +856,11 @@
 				57E1CD281C884F1C00A7DFFB /* SharedViewController.swift in Sources */,
 				E7FC27C222F1DB0C00EED267 /* CrashReporter.swift in Sources */,
 				496E5C491DEEF9820050EFB6 /* HelperAssembly.swift in Sources */,
+				EA38241B240530EC00F85304 /* Park.swift in Sources */,
 				49595DCE1D93E11D003F1816 /* TargetSettings.swift in Sources */,
 				E7B4FDCE22FDBEF900B39055 /* ViewStyle.swift in Sources */,
+				EA382419240530D500F85304 /* RestParksMapper.swift in Sources */,
+				EA5F48B824055A0F00412F6C /* HomeViewController.swift in Sources */,
 				92D26A34224B752D00C18FAE /* Assets.swift in Sources */,
 				E7FC27C122F1DB0C00EED267 /* ModuleLauncher.swift in Sources */,
 				92E4DC61214BB95400431471 /* DecodingError+Debug.swift in Sources */,
