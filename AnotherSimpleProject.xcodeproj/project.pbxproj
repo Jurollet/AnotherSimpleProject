@@ -48,6 +48,7 @@
 		EA3824112405229400F85304 /* ParksAndRecRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3824102405229400F85304 /* ParksAndRecRepository.swift */; };
 		EA3824142405284600F85304 /* RestPark.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3824132405284600F85304 /* RestPark.swift */; };
 		EA382416240529AE00F85304 /* RestParks.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA382415240529AE00F85304 /* RestParks.swift */; };
+		EA382419240530D500F85304 /* RestParksMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA382418240530D500F85304 /* RestParksMapper.swift */; };
 		EA38241B240530EC00F85304 /* Park.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA38241A240530EC00F85304 /* Park.swift */; };
 		EC626C5C1F9A282A001C332C /* HelveticaNeue.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC626C5B1F9A282A001C332C /* HelveticaNeue.plist */; };
 /* End PBXBuildFile section */
@@ -116,6 +117,7 @@
 		EA3824102405229400F85304 /* ParksAndRecRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksAndRecRepository.swift; sourceTree = "<group>"; };
 		EA3824132405284600F85304 /* RestPark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestPark.swift; sourceTree = "<group>"; };
 		EA382415240529AE00F85304 /* RestParks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestParks.swift; sourceTree = "<group>"; };
+		EA382418240530D500F85304 /* RestParksMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestParksMapper.swift; sourceTree = "<group>"; };
 		EA38241A240530EC00F85304 /* Park.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Park.swift; sourceTree = "<group>"; };
 		EC626C5B1F9A282A001C332C /* HelveticaNeue.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = HelveticaNeue.plist; sourceTree = "<group>"; };
 		F58BBA250BE675C419ED2946 /* Pods-AnotherSimpleProjectTests.preproduction.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnotherSimpleProjectTests.preproduction.xcconfig"; path = "Pods/Target Support Files/Pods-AnotherSimpleProjectTests/Pods-AnotherSimpleProjectTests.preproduction.xcconfig"; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 		495911531D7D4EFE0057C974 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				EA382417240530BD00F85304 /* RestMappers */,
 				EA3824122405236400F85304 /* RestModels */,
 				EA38240E2405222A00F85304 /* Repositories */,
 			);
@@ -406,6 +409,14 @@
 				EA382415240529AE00F85304 /* RestParks.swift */,
 			);
 			name = RestModels;
+			sourceTree = "<group>";
+		};
+		EA382417240530BD00F85304 /* RestMappers */ = {
+			isa = PBXGroup;
+			children = (
+				EA382418240530D500F85304 /* RestParksMapper.swift */,
+			);
+			name = RestMappers;
 			sourceTree = "<group>";
 		};
 		F83B92141A7A8CCF009E7ADF /* Configuration */ = {
@@ -813,6 +824,7 @@
 				EA38241B240530EC00F85304 /* Park.swift in Sources */,
 				49595DCE1D93E11D003F1816 /* TargetSettings.swift in Sources */,
 				E7B4FDCE22FDBEF900B39055 /* ViewStyle.swift in Sources */,
+				EA382419240530D500F85304 /* RestParksMapper.swift in Sources */,
 				92D26A34224B752D00C18FAE /* Assets.swift in Sources */,
 				E7FC27C122F1DB0C00EED267 /* ModuleLauncher.swift in Sources */,
 				92E4DC61214BB95400431471 /* DecodingError+Debug.swift in Sources */,
