@@ -19,6 +19,15 @@ class ApplicationCoordinator: Coordinator {
     // MARK: - Coordinator
 
     func start() {
-        window.rootViewController = SharedViewController()
+        window.rootViewController = HomeViewController(delegate: self)
+    }
+}
+
+extension ApplicationCoordinator: HomeViewControllerDelegate {
+
+    // MARK: - HomeViewControllerDelegate
+
+    func homeViewControllerDidRequestToShowPark(withName name: String) {
+        // todo
     }
 }
