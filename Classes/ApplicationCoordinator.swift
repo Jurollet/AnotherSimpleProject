@@ -11,6 +11,7 @@ import Foundation
 class ApplicationCoordinator: Coordinator {
 
     private let window: UIWindow
+    private let navigationController = SharedNavigationController()
 
     init(window: UIWindow) {
         self.window = window
@@ -19,7 +20,8 @@ class ApplicationCoordinator: Coordinator {
     // MARK: - Coordinator
 
     func start() {
-        window.rootViewController = HomeViewController(delegate: self)
+        navigationController.viewControllers = [HomeViewController(delegate: self)]
+        window.rootViewController = navigationController
     }
 }
 
