@@ -30,6 +30,9 @@ extension ApplicationCoordinator: HomeViewControllerDelegate {
     // MARK: - HomeViewControllerDelegate
 
     func homeViewControllerDidRequestToShowPark(withName name: String) {
-        // todo
+        navigationController.pushViewController(
+            BiggestParkViewController(parkName: name),
+            animated: true
+        )
     }
 }
