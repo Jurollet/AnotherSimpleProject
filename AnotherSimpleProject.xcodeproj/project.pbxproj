@@ -51,6 +51,7 @@
 		EA382419240530D500F85304 /* RestParksMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA382418240530D500F85304 /* RestParksMapper.swift */; };
 		EA38241B240530EC00F85304 /* Park.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA38241A240530EC00F85304 /* Park.swift */; };
 		EA38241E2405517000F85304 /* GetAllParksInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA38241D2405517000F85304 /* GetAllParksInteractor.swift */; };
+		EA5F48B824055A0F00412F6C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5F48B724055A0F00412F6C /* HomeViewController.swift */; };
 		EC626C5C1F9A282A001C332C /* HelveticaNeue.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC626C5B1F9A282A001C332C /* HelveticaNeue.plist */; };
 /* End PBXBuildFile section */
 
@@ -121,6 +122,7 @@
 		EA382418240530D500F85304 /* RestParksMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestParksMapper.swift; sourceTree = "<group>"; };
 		EA38241A240530EC00F85304 /* Park.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Park.swift; sourceTree = "<group>"; };
 		EA38241D2405517000F85304 /* GetAllParksInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllParksInteractor.swift; sourceTree = "<group>"; };
+		EA5F48B724055A0F00412F6C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EC626C5B1F9A282A001C332C /* HelveticaNeue.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = HelveticaNeue.plist; sourceTree = "<group>"; };
 		F58BBA250BE675C419ED2946 /* Pods-AnotherSimpleProjectTests.preproduction.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnotherSimpleProjectTests.preproduction.xcconfig"; path = "Pods/Target Support Files/Pods-AnotherSimpleProjectTests/Pods-AnotherSimpleProjectTests.preproduction.xcconfig"; sourceTree = "<group>"; };
 		F83B92161A7A8CCF009E7ADF /* Defaults-Config_Defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Defaults-Config_Defaults.plist"; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 		495911511D7D4EF60057C974 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				EA5F48B624055A0400412F6C /* Home */,
 				495911551D7D4F150057C974 /* Shared */,
 			);
 			name = App;
@@ -428,6 +431,14 @@
 				EA38241D2405517000F85304 /* GetAllParksInteractor.swift */,
 			);
 			name = GetAllParks;
+			sourceTree = "<group>";
+		};
+		EA5F48B624055A0400412F6C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EA5F48B724055A0F00412F6C /* HomeViewController.swift */,
+			);
+			name = Home;
 			sourceTree = "<group>";
 		};
 		F83B92141A7A8CCF009E7ADF /* Configuration */ = {
@@ -837,6 +848,7 @@
 				49595DCE1D93E11D003F1816 /* TargetSettings.swift in Sources */,
 				E7B4FDCE22FDBEF900B39055 /* ViewStyle.swift in Sources */,
 				EA382419240530D500F85304 /* RestParksMapper.swift in Sources */,
+				EA5F48B824055A0F00412F6C /* HomeViewController.swift in Sources */,
 				92D26A34224B752D00C18FAE /* Assets.swift in Sources */,
 				E7FC27C122F1DB0C00EED267 /* ModuleLauncher.swift in Sources */,
 				92E4DC61214BB95400431471 /* DecodingError+Debug.swift in Sources */,
