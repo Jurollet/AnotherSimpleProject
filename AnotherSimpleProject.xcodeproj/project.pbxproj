@@ -52,6 +52,7 @@
 		EA38241B240530EC00F85304 /* Park.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA38241A240530EC00F85304 /* Park.swift */; };
 		EA38241E2405517000F85304 /* GetAllParksInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA38241D2405517000F85304 /* GetAllParksInteractor.swift */; };
 		EA5F48B824055A0F00412F6C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5F48B724055A0F00412F6C /* HomeViewController.swift */; };
+		EA5F48BB2405600F00412F6C /* BiggestParkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5F48BA2405600F00412F6C /* BiggestParkViewController.swift */; };
 		EC626C5C1F9A282A001C332C /* HelveticaNeue.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC626C5B1F9A282A001C332C /* HelveticaNeue.plist */; };
 /* End PBXBuildFile section */
 
@@ -123,6 +124,7 @@
 		EA38241A240530EC00F85304 /* Park.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Park.swift; sourceTree = "<group>"; };
 		EA38241D2405517000F85304 /* GetAllParksInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllParksInteractor.swift; sourceTree = "<group>"; };
 		EA5F48B724055A0F00412F6C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EA5F48BA2405600F00412F6C /* BiggestParkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiggestParkViewController.swift; sourceTree = "<group>"; };
 		EC626C5B1F9A282A001C332C /* HelveticaNeue.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = HelveticaNeue.plist; sourceTree = "<group>"; };
 		F58BBA250BE675C419ED2946 /* Pods-AnotherSimpleProjectTests.preproduction.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnotherSimpleProjectTests.preproduction.xcconfig"; path = "Pods/Target Support Files/Pods-AnotherSimpleProjectTests/Pods-AnotherSimpleProjectTests.preproduction.xcconfig"; sourceTree = "<group>"; };
 		F83B92161A7A8CCF009E7ADF /* Defaults-Config_Defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Defaults-Config_Defaults.plist"; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 		495911511D7D4EF60057C974 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				EA5F48B92405600000412F6C /* BiggestPark */,
 				EA5F48B624055A0400412F6C /* Home */,
 				495911551D7D4F150057C974 /* Shared */,
 			);
@@ -439,6 +442,14 @@
 				EA5F48B724055A0F00412F6C /* HomeViewController.swift */,
 			);
 			name = Home;
+			sourceTree = "<group>";
+		};
+		EA5F48B92405600000412F6C /* BiggestPark */ = {
+			isa = PBXGroup;
+			children = (
+				EA5F48BA2405600F00412F6C /* BiggestParkViewController.swift */,
+			);
+			name = BiggestPark;
 			sourceTree = "<group>";
 		};
 		F83B92141A7A8CCF009E7ADF /* Configuration */ = {
@@ -819,6 +830,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA5F48BB2405600F00412F6C /* BiggestParkViewController.swift in Sources */,
 				496E5C411DEEF9620050EFB6 /* DependencyProvider.swift in Sources */,
 				EA3824142405284600F85304 /* RestPark.swift in Sources */,
 				EA3824112405229400F85304 /* ParksAndRecRepository.swift in Sources */,
