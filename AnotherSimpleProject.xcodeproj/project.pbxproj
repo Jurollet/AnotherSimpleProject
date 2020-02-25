@@ -46,6 +46,8 @@
 		E7FC27C122F1DB0C00EED267 /* ModuleLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FC27BE22F1DB0C00EED267 /* ModuleLauncher.swift */; };
 		E7FC27C222F1DB0C00EED267 /* CrashReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FC27BF22F1DB0C00EED267 /* CrashReporter.swift */; };
 		EA3824112405229400F85304 /* ParksAndRecRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3824102405229400F85304 /* ParksAndRecRepository.swift */; };
+		EA3824142405284600F85304 /* RestPark.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3824132405284600F85304 /* RestPark.swift */; };
+		EA382416240529AE00F85304 /* RestParks.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA382415240529AE00F85304 /* RestParks.swift */; };
 		EC626C5C1F9A282A001C332C /* HelveticaNeue.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC626C5B1F9A282A001C332C /* HelveticaNeue.plist */; };
 /* End PBXBuildFile section */
 
@@ -111,6 +113,8 @@
 		E7FC27BE22F1DB0C00EED267 /* ModuleLauncher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleLauncher.swift; sourceTree = "<group>"; };
 		E7FC27BF22F1DB0C00EED267 /* CrashReporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrashReporter.swift; sourceTree = "<group>"; };
 		EA3824102405229400F85304 /* ParksAndRecRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksAndRecRepository.swift; sourceTree = "<group>"; };
+		EA3824132405284600F85304 /* RestPark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestPark.swift; sourceTree = "<group>"; };
+		EA382415240529AE00F85304 /* RestParks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestParks.swift; sourceTree = "<group>"; };
 		EC626C5B1F9A282A001C332C /* HelveticaNeue.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = HelveticaNeue.plist; sourceTree = "<group>"; };
 		F58BBA250BE675C419ED2946 /* Pods-AnotherSimpleProjectTests.preproduction.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnotherSimpleProjectTests.preproduction.xcconfig"; path = "Pods/Target Support Files/Pods-AnotherSimpleProjectTests/Pods-AnotherSimpleProjectTests.preproduction.xcconfig"; sourceTree = "<group>"; };
 		F83B92161A7A8CCF009E7ADF /* Defaults-Config_Defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Defaults-Config_Defaults.plist"; sourceTree = "<group>"; };
@@ -180,6 +184,7 @@
 		495911531D7D4EFE0057C974 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				EA3824122405236400F85304 /* RestModels */,
 				EA38240E2405222A00F85304 /* Repositories */,
 			);
 			name = Data;
@@ -389,6 +394,15 @@
 				EA3824102405229400F85304 /* ParksAndRecRepository.swift */,
 			);
 			name = ParksAndRecRepository;
+			sourceTree = "<group>";
+		};
+		EA3824122405236400F85304 /* RestModels */ = {
+			isa = PBXGroup;
+			children = (
+				EA3824132405284600F85304 /* RestPark.swift */,
+				EA382415240529AE00F85304 /* RestParks.swift */,
+			);
+			name = RestModels;
 			sourceTree = "<group>";
 		};
 		F83B92141A7A8CCF009E7ADF /* Configuration */ = {
@@ -770,9 +784,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				496E5C411DEEF9620050EFB6 /* DependencyProvider.swift in Sources */,
+				EA3824142405284600F85304 /* RestPark.swift in Sources */,
 				EA3824112405229400F85304 /* ParksAndRecRepository.swift in Sources */,
 				E7B4FDD422FDC17F00B39055 /* ViewStyle+UIWindow.swift in Sources */,
 				496E5C471DEEF97B0050EFB6 /* RepositoryAssembly.swift in Sources */,
+				EA382416240529AE00F85304 /* RestParks.swift in Sources */,
 				49B3B43921DF9EB800F70BCF /* DebugToolKit.swift in Sources */,
 				4959115A1D7D4FE70057C974 /* Coordinator.swift in Sources */,
 				49ADDFB51F55B4DC0072B16C /* TargetSettingsDecoder.swift in Sources */,
